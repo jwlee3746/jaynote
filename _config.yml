@@ -115,7 +115,7 @@ author:
   name             : "Jaewon"
   avatar           : "images/logo.png"
   bio              : "Jaewon의 개발 블로그입니다."
-  location         : "South Korea"
+  location         : # "South Korea"
   email            :
   links:
     - label: "Email"
