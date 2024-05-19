@@ -7,6 +7,8 @@ comments: false
 
 ![jaynote](../assets/images/posts_img/about/jaynote.png)
 
+<!-- <img src="../assets/images/posts_img/about/jaynote.png" width="256" height="256"/> -->
+
 ## Education
 
 ### KAIST
