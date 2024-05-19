@@ -39,18 +39,25 @@ body {
 .page {
   @include breakpoint($large) {
     float: right;
-    width: calc(100%);
+    
+    width: calc(100% - #{$left-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
+    /* 2022.01.19 gap between sidebar and page */
+    padding-left: 3em;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100%);
+    
+    width: calc(100% - #{$left-sidebar-width});
     padding-right: $right-sidebar-width;
+    /* 2022.01.19 gap between sidebar and page */
+    padding-left: 3em;
   }
 
   .page__inner-wrap {
     float: left;
     margin-top: 1em;
+    padding-top: 1em;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -60,83 +67,23 @@ body {
     .page__meta,
     .page__share {
       position: relative;
->>>>>>> parent of 5511e17f (Update _page.scss)
       float: left;
-      margin-top: 1em;
       margin-left: 0;
       margin-right: 0;
       width: 100%;
       clear: both;
-<<<<<<< HEAD
-  
-      .page__content,
-      .page__meta,
-      .page__share {
-        position: relative;
-        float: left;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        clear: both;
-      }
-    }
-  }
-  
-  .page__title {
-    margin-top: 0;
-    line-height: 1;
-  
-    a {
-      color: $text-color;
-      text-decoration: none;
-    }
-  
-    & + .page__meta {
-      margin-top: -0.5em;
-    }
-  }
-  
-  .page__lead {
-    font-family: $global-font-family;
-    font-size: $type-size-4;
-  }
-  
-  .page__content {
-    h2 {
-      padding-bottom: 0.5em;
-      border-bottom: 1px solid $border-color;
-    }
-  
-    h1, h2, h3, h4, h5, h6 {
-      .header-link {
-        position: relative;
-        left: 0.5em;
-        opacity: 0;
-        font-size: 0.8em;
-        -webkit-transition: opacity 0.2s ease-in-out 0.1s;
-        -moz-transition: opacity 0.2s ease-in-out 0.1s;
-        -o-transition: opacity 0.2s ease-in-out 0.1s;
-        transition: opacity 0.2s ease-in-out 0.1s;
-      }
-  
-      &:hover .header-link {
-        opacity: 1;
-=======
     }
   }
 }
 
 .page__title {
   margin-top: 0;
-  line-height: 1;
-
-  a {
-    color: $text-color;
-    text-decoration: none;
-  }
+  line-height: 1.5;
+  font-size: $type-size-3;
 
   & + .page__meta {
     margin-top: -0.5em;
+    font-size: $type-size-6;
   }
 }
 
@@ -146,9 +93,11 @@ body {
 }
 
 .page__content {
-  h2 {
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+  font-size: 0.9em;
+  font-weight: normal;
+
+  h1 {
+    font-weight: bold;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -168,16 +117,8 @@ body {
 		}
 	}
 
-  p,
-  li,
-  dl {
-    font-size: 1em;
-  }
-
   /* paragraph indents */
   p {
-    margin: 0 0 $indent-var;
-
     /* sibling indentation*/
     @if $paragraph-indent == true {
       & + p {
@@ -221,6 +162,11 @@ body {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+
+  img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }
 
 .page__hero {
@@ -233,7 +179,6 @@ body {
   animation-delay: 0.25s;
 
   &--overlay {
->>>>>>> parent of 5511e17f (Update _page.scss)
     position: relative;
     margin-bottom: 2em;
     padding: 3em 0;
@@ -484,7 +429,7 @@ body {
 .page__comments-title {
   margin-top: 1rem;
   margin-bottom: 10px;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   font-size: $type-size-6;
   border-top: 1px solid $border-color;
   text-transform: uppercase;
@@ -510,7 +455,7 @@ body {
 
 .comment {
   @include clearfix();
-  margin: 1em 0;
+  padding-top : 2em;
 
   &:not(:last-child) {
     border-bottom: 1px solid $border-color;
@@ -580,11 +525,11 @@ body {
 
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    width: calc(100% - #{$left-sidebar-width-narrow});
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: calc(100% - #{$left-sidebar-width});
   }
 
   a {
@@ -603,25 +548,64 @@ body {
    Wide Pages
    ========================================================================== */
 
+/* 2022.01.20 wide pages use for lifelog */
 .wide {
   .page {
+    width:100%;
+    float:inherit;
+    
     @include breakpoint($large) {
       padding-right: 0;
+      /* 2022.01.20 add padding-left */
+      padding-left: 0;
     }
 
     @include breakpoint($x-large) {
       padding-right: 0;
+      /* 2022.01.20 add padding-left */
+      padding-left: 0;
+    }
+
+    .page__inner-wrap {
+      margin-top: 5em;
+
+      .page__content {
+        margin-top: 5em;
+      }
+    }
+
+    .page__title {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      line-height: 1.5;
+      font-size: $type-size-2;
+      text-align: center;
+    
+      & + .page__meta {
+        margin-top: -0.5em;
+        font-size: $type-size-6;
+        text-align: center;
+      }
     }
   }
 
   .page__related {
     @include breakpoint($large) {
       padding-right: 0;
+      /* 2022.01.20 add padding-left */
+      padding-left: 0;
     }
 
     @include breakpoint($x-large) {
       padding-right: 0;
+      /* 2022.01.20 add padding-left */
+      padding-left: 0;
     }
   }
 }
->>>>>>> parent of 5511e17f (Update _page.scss)
+
+/* 2022.01.20 add .wide#main for lifelog page */
+#main.wide {
+  padding-left: 7em;
+  padding-right: 7em;
+}
