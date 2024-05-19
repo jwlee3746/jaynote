@@ -39,7 +39,7 @@ comments: false
         </li>
         <li>
           <a href="https://www.linkedin.com/in/jwlee3746" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">  https://www.linkedin.com/in/jwlee3746</span>
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">  https://www.linkedin.com/in/jwlee3746</span>
           </a>
         </li>
     </ul>
