@@ -5,4 +5,4 @@ layout: single
 comments: false
 ---
 
-![](../../assets/images/posts_img/about/KakaoTalk_20240102_162056758_02.jpg)
+![profile](../assets/images/posts_img/about/profile.jpg)
