@@ -5,14 +5,12 @@ layout: single
 comments: false
 ---
 
-# Table of Contents
-
-## Project 1
+# Project 1
 
 Learn about the purpose and scope of the project.
 [search](search.md)
 
-## Project 2
+# Project 2
 
 Instructions on how to set up the project environment.
 [sample](../_posts/2024-05-08-1.md)
