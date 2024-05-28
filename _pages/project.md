@@ -1,25 +1,18 @@
 ---
 title: "My Projects"
-permalink: /Projects/
+permalink: /Project/
 layout: single
 comments: false
 ---
 
-# Project Documentation
+# Table of Contents
 
-## Table of Contents
-
-1. [404](404.md)
-2. [Setup](2024-05-08-1.md)
-
----
-
-### Introduction
+## Project 1
 
 Learn about the purpose and scope of the project.
-[Read more](introduction.md)
+[search](search.md)
 
-### Setup
+## Project 2
 
 Instructions on how to set up the project environment.
-[Read more](setup.md)
+[sample](../_posts/2024-05-08-1.md)
