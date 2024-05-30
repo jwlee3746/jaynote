@@ -21,6 +21,8 @@ categories:
     url: /categories/Algorithm/
   - title: "Machine Learning"
     url: /categories/Machine Learning/
+  - title: "MLOps"
+    url: /categories/MLOps
   - title: "NLP"
     url: /categories/NLP/
   - title: "Paper"
