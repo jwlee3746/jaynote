@@ -1,7 +1,7 @@
 ---
 title: "My Projects"
 permalink: /Project/
-# layout: single
+layout: single
 comments: false
 ---
 
