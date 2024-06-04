@@ -21,6 +21,8 @@ categories:
     url: /categories/Algorithm/
   - title: "Computer Vision"
     url: /categories/Computer Vision/
+  - title: "Generative Model"
+    url: /categories/Generative Model/
   - title: "Machine Learning"
     url: /categories/Machine Learning/
   - title: "MLOps"
