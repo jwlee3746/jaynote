@@ -12,13 +12,20 @@ comments: false
 ## Education
 
 ### KAIST
+
 - B.S. in Computer Science
 - Mar 2017 - Feb 2024
 
 ## Work Experience
 
+### Samsung Electronics
+
+- Full-time, Software Engineer
+- July 2024 - present
+
 ### Pebblous
-- Intern, Research Team
+
+- Intern, ML Engineer
 - May 2022 - Feb 2023
 
 ## Channel
